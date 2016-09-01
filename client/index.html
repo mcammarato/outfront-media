@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Outfront Widget</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script type="text/javascript" src="/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/angular/angular.js"></script>
+    <script type="text/javascript" src="/js/app.js"></script>
+    <script type="text/javascript" src="/js/activeClass.js"></script>
+    <script type="text/javascript" src="/controllers/home-controller.js"></script>
+    <script type="text/javascript" src="/angular-pagination/dirPagination.js"></script>
+  </head>
+  <body ng-app='myApp'>
+
+  <!-- Table to be filled with data -->
+    <table class="table-main" ng-Controller="homeController">
+      <tr class="row" dir-paginate="x in location | itemsPerPage: 15" total-items="{{totalItems}}" current-page="currentPage">
+        <td id="location">{{x.latitude}}, {{x.longitude}}<br>{{x.location}}</td>
+        <td id="media">{{x.media}} {{x.copy_size}}</td>
+        <td id="cpm">${{formatNumber(x.cpm)}}<br><span>Avg impressions</span></td>
+        <td><button type="button">Add</button></td>
+      </tr>
+    <!-- Pagination Controlls -->
+      <tr class="row">
+        <td>
+          <dir-pagination-controls
+            on-page-change="pageChange(newPageNumber, oldPageNumber)"
+            max-size="5"
+            direction-links="true"
+            boundary-links="true" >
+          </dir-pagination-controls>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

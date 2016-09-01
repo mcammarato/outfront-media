@@ -1,0 +1,24 @@
+{
+  "name": "outfront",
+  "description": "code test",
+  "main": "index.js",
+  "authors": [
+    "Mike Cammarato"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "code",
+    "test"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularUtils-pagination": "angular-utils-pagination#^0.11.1"
+  }
+}

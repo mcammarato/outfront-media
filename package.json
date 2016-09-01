@@ -1,0 +1,25 @@
+{
+  "name": "outfront",
+  "version": "1.0.0",
+  "description": "code test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "code",
+    "test"
+  ],
+  "author": "Mike Cammarato",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "body-parser": "^1.15.2",
+    "bower": "^1.7.9",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-watch": "^4.3.9",
+    "jquery": "^3.1.0"
+  }
+}

@@ -1,0 +1,50 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #EEEEEE;
+  padding: 70px; }
+
+.table-main {
+  border-spacing: 0.5rem;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 3px;
+  color: #616161;
+  table-layout: fixed; }
+  .table-main tr td {
+    border-bottom: 1px solid #EEEEEE;
+    padding: 1rem;
+    padding-right: 10px;
+    text-align: left;
+    max-width: 500px; }
+  .table-main tr button {
+    border-radius: 3px;
+    border: 0;
+    background-color: #21afc7;
+    color: white;
+    height: 100px;
+    width: 100px;
+    font-size: 15px; }
+  .table-main tr #cpm {
+    color: #21afc7; }
+  .table-main tr span {
+    color: #757575; }
+
+.pagination {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 375px;
+  display: inline-flex; }
+  .pagination li {
+    float: left;
+    padding: 4px 0 0 2px; }
+    .pagination li a {
+      display: block;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      color: #21afc7;
+      border: 1px solid #21afc7; }
+  .pagination li.active a {
+    background-color: #21afc7;
+    color: #ffffff; }
